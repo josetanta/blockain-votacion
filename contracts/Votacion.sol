@@ -29,8 +29,8 @@ contract Votacion {
 
     //CONSTRUCTOR
     constructor() public {
-        addCandidate("Candidate 1");
-        addCandidate("Candidate 2");
+        addCandidate("Candidato 1");
+        addCandidate("Candidato 2");
     }
 
     //FUNCIONES

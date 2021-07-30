@@ -1,20 +1,20 @@
-// Images
 import { Fragment, useState } from 'react';
-import logo1 from './assets/logo1.png';
-import logo2 from './assets/logo2.png';
 import { useUser } from './contexts/UserContext';
 import useCounterVotes from './hooks/useCounterVotes';
+
+// Images
+import logo1 from '../assets/logo1.png';
+import logo2 from '../assets/logo2.png';
 
 function Container() {
   const elector = useUser();
   const votos = useCounterVotes();
-  const setNameCandidato = useState('')[1];
   const [voto, setVoto] = useState(0);
 
-  const handlerGetCandidateName = async (candidateId) => {
-    const candidateName = await window.getCandidateName(candidateId);
-    setNameCandidato(candidateName);
-  };
+  // const handlerGetCandidateName = async (candidateId) => {
+  //   const candidateName = await window.getCandidateName(candidateId);
+
+  // };
 
   const handlerGetCandidateVoters = async (candidateId) => {
     const candidateVoters = await window.getVotersCandidate(candidateId);
@@ -22,7 +22,7 @@ function Container() {
   };
   const handlerVotarClick = (candidateId) => {
     (async () => {
-      await handlerGetCandidateName(candidateId);
+      // await handlerGetCandidateName(candidateId);
       await handlerGetCandidateVoters(candidateId);
 
       window.votar(candidateId);
