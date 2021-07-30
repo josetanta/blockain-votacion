@@ -1,7 +1,6 @@
 import { Fragment, useState } from 'react';
-import { useUser } from './contexts/UserContext';
-import useCounterVotes from './hooks/useCounterVotes';
-
+import useCounterVotes from '../hooks/useCounterVotes';
+import { useUser } from '../contexts/UserContext';
 // Images
 import logo1 from '../assets/logo1.png';
 import logo2 from '../assets/logo2.png';
@@ -79,6 +78,7 @@ function Container() {
             <div className="row justify-content-center">
               <div className="col d-flex align-items-center flex-column col-md-6">
                 <p className="text-info-votes mt-5">
+                  Candidato 1
                   <span className="counter-voter">
                     {votos.c1 > 0 ? votos.c1 : ''}
                   </span>
@@ -87,6 +87,7 @@ function Container() {
               </div>
               <div className="col d-flex align-items-center flex-column col-md-6">
                 <p className="text-info-votes mt-5">
+                  Candidato 2
                   <span className="counter-voter">
                     {votos.c2 > 0 ? votos.c2 : ''}
                   </span>
