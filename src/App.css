@@ -1,0 +1,56 @@
+.bg-app {
+  background-color: #c4c4c4;
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.button-voter {
+  background-color: #680a0a;
+  color: rgba(255, 255, 255, 0.876);
+  transition: 0.2s;
+  width: 210px;
+  height: 52px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+.button-voter:hover {
+  color: rgb(178, 175, 175);
+}
+
+.title-votacion {
+  color: #680a0a;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.image-logo-candidato {
+  width: 135px;
+  height: 137px;
+  margin-bottom: 2rem;
+}
+
+.text-info-votes {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  width: 120px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.counter-voter {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.text-name-candidate {
+  color: #680a0a;
+  font-weight: 800;
+}
