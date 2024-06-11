@@ -16,3 +16,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  View-my-machine:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cat /etc/os-release
+      - run: nproc
+      - name: My process
+        run: echo "🖥️🖥️🖥️🖥️"
